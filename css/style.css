@@ -338,6 +338,17 @@ font-family: 'Source Sans 3', sans-serif; */
         color: white;
         font-size: 15px;
     }
+
+    .information .box table td {
+        padding-right: 50px;
+        padding: 5px 0;
+        font-size: 14px;
+        padding-right: 7px;
+    }
+    .information .box p {
+        font-size: 14px;
+       line-height: 20px;
+    }
     
 }
 
