@@ -108,10 +108,11 @@ font-family: 'Source Sans 3', sans-serif; */
     color: #ff305b;
 
 }
+
 @media(max-width:480px) {
-   ul{
-    display: none;
-   }
+    ul {
+        display: none;
+    }
 }
 
 /* End Navbar */
@@ -167,15 +168,18 @@ font-family: 'Source Sans 3', sans-serif; */
         width: 340px;
     }
 }
+
 @media(max-width:480px) {
-    .main .m-text h1{
+    .main .m-text h1 {
         font-size: 55px;
     }
+
     .main .m-text p {
         font-size: 18px;
-    
+
     }
 }
+
 /* End Main */
 /* Start information */
 .information {
@@ -195,58 +199,63 @@ font-family: 'Source Sans 3', sans-serif; */
 .information .box img {
     width: 100%;
     height: auto;
-    border-radius: 5px; 
-    
+    border-radius: 5px;
+
 }
 
 
-.information .box  .contain {
+.information .box .contain {
     border-radius: 5px;
     width: 70%;
     margin: auto;
-   position: relative;
-   
- 
+    position: relative;
+
+
 }
-.information .box  .contain .boxing{
+
+.information .box .contain .boxing {
     overflow: hidden;
     position: relative;
 }
-.information .box .contain::before{
+
+.information .box .contain::before {
     content: "";
     border: 8px solid #333333;
     position: absolute;
     width: 100%;
     height: 100%;
-    top:-50px;
+    top: -50px;
     left: -50px;
-    border-radius: 5px; 
+    border-radius: 5px;
     z-index: -1;
 }
 
 .information .box .caption {
     background-color: rgba(0, 0, 0, .7);
     position: absolute;
-    height:100%;
+    height: 100%;
     width: 100%;
     left: 0px;
-    top:0px;
+    top: 0px;
     transform: translateY(100%);
-    transition: transform 1s;
-    border-radius: 5px; 
-   
+    transition: transform 1.5s;
+    border-radius: 5px;
+
 }
-.caption .icons{
+
+.caption .icons {
     width: 35%;
     margin: auto;
     padding-top: 200px;
 }
-.caption .icons i{
+
+.caption .icons i {
     padding-left: 10px;
     color: white;
     font-size: 18px;
 }
-.information .contain:hover .caption{
+
+.information .contain:hover .caption {
     transform: translateY(0);
 }
 
@@ -306,34 +315,42 @@ font-family: 'Source Sans 3', sans-serif; */
     font-weight: 400;
     border-radius: 3px;
 }
+
 @media(max-width:480px) {
-    .contain{
+    .contain {
         width: 100%;
     }
+
     .information .box {
-        width:100%;
-        padding: 0 ;
+        width: 100%;
+        padding: 0;
     }
+
     .information {
         padding: 40px 0;
         margin-bottom: 20px;
     }
-    .information .box .contain::before{
+
+    .information .box .contain::before {
         border: none;
-      
+
     }
+
     .information .box table td {
-         padding-right: 0;
+        padding-right: 0;
     }
+
     .inner-box {
-        padding-left:0;
+        padding-left: 0;
     }
-    .caption .icons{
+
+    .caption .icons {
         width: 50%;
         margin: auto;
         padding-top: 140px;
     }
-    .caption .icons i{
+
+    .caption .icons i {
         padding-left: 10px;
         color: white;
         font-size: 15px;
@@ -345,11 +362,12 @@ font-family: 'Source Sans 3', sans-serif; */
         font-size: 14px;
         padding-right: 7px;
     }
+
     .information .box p {
         font-size: 14px;
-       line-height: 20px;
+        line-height: 20px;
     }
-    
+
 }
 
 /* End information Section  */
@@ -364,7 +382,11 @@ font-family: 'Source Sans 3', sans-serif; */
     width: calc(100%/4);
     text-align: center;
     padding: 30px 15px;
-    /* transition: 2s; */
+    transition: 1s all;
+
+}
+.Our-service .box:hover {
+    background-color: white;
 
 }
 
@@ -372,8 +394,12 @@ font-family: 'Source Sans 3', sans-serif; */
     color: #ff305b;
     font-size: 36px;
     margin-bottom: 15px;
+    transition: 1s all;
 }
+.Our-service .box:hover  i{
+    transform: scale(1.2);
 
+}
 .Our-service .box h3 {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 24px;
@@ -389,6 +415,7 @@ font-family: 'Source Sans 3', sans-serif; */
     font-weight: 400;
     line-height: 25px;
 }
+
 @media(max-width:480px) {
     .Our-service .box {
         width: 100%;
@@ -396,14 +423,8 @@ font-family: 'Source Sans 3', sans-serif; */
     }
 }
 
-.Our-service .box:hover {
-    background-color: white;
 
-    i {
-        transition: .5s;
-        transform: scale(1.2, 1.2);
-    }
-}
+
 /* End Our Service  */
 /* Start Our Protofilo */
 .our-protofilo {
@@ -444,24 +465,69 @@ font-family: 'Source Sans 3', sans-serif; */
     float: left;
     width: calc(100%/3);
     padding: 15px 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-box-inner {
+    position: relative;
+}
+
+
+.our-protofilo .gallary .overlay-img {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    opacity: 0;
+    transition: 1s opacity;
+}
+
+.our-protofilo .gallary .overlay-img i {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    color: #ff305b;
+}
+
+.information .box .icons i:hover {
+    color: #ff305b;
+}
+
+.our-protofilo .gallary .img-box:hover .overlay-img {
+    cursor: pointer;
+    opacity: 1;
 }
 
 .our-protofilo .gallary .img-box img {
     width: 100%;
+    display: block;
 }
+
+.information .box button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
 @media(max-width:480px) {
     .our-protofilo {
         padding: 40px 0;
     }
+
     .our-protofilo .menu li {
         font-size: 14px;
         padding: 10px;
     }
+
     .our-protofilo .gallary .img-box {
         width: 100%;
         padding: 15px 0px;
     }
 }
+
 /* End Our Protofilo */
 /* Start Status */
 .Status {
@@ -496,20 +562,22 @@ font-family: 'Source Sans 3', sans-serif; */
     font-weight: 600;
     font-size: 16px;
 }
+
 @media(max-width:480px) {
     .Status {
-      
+
         padding: 40px 0;
     }
-    
+
     .Status .box {
-     
+
         width: 100%;
         text-align: center;
         margin-bottom: 5px;
-    
+
     }
 }
+
 /* End Status */
 /* Start Cient FeedBack  */
 .client {
@@ -723,28 +791,28 @@ font-family: 'Source Sans 3', sans-serif; */
     margin-left: 2px;
     font-size: 12px;
 }
+
 @media(max-width:480px) {
     .our-blog {
         padding: 40px 0;
     }
-    
+
     .our-blog .our-blog-boxes .box {
-        width:100%;
+        width: 100%;
         padding: 0px;
     }
-    
+
 }
 
 /* End Our Blog */
 /* Start Our Contact */
 .our-contact {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .our-contact .form {
-    width: 70%;
+    width: 60%;
     margin: auto;
-    padding: 40px;
 }
 
 .our-contact .form input {
@@ -759,14 +827,30 @@ font-family: 'Source Sans 3', sans-serif; */
 .our-contact .form input.Name {
     float: left;
 }
+.our-contact .form input.Name:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+    border: 1px solid #843534;
+    outline: 0 ;
+}
 
 .our-contact .form input.Email {
     float: right;
+}
+.our-contact .form input.Email:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+    border: 1px solid #843534;
+    outline: 0 ;
 }
 
 .our-contact .form input.Subject {
     width: 100%;
     margin: 20px 0;
+   
+}
+.our-contact .form input.Subject:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+    border: 1px solid #843534;
+    outline: 0 ;
 }
 
 .our-contact .form textarea {
@@ -776,6 +860,13 @@ font-family: 'Source Sans 3', sans-serif; */
     font-size: 14px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    resize: both;
+    overflow: auto;
+}
+.our-contact .form textarea:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+    border: 1px solid #843534;
+    outline: 0 ;
 }
 
 .our-contact .form button {
@@ -793,23 +884,26 @@ font-family: 'Source Sans 3', sans-serif; */
     background-color: red;
     cursor: no-drop;
 }
+
 @media(max-width:480px) {
     .our-contact {
         padding: 40px 0;
     }
-    
+
     .our-contact .form {
         width: 100%;
         padding: 0px;
     }
+
     .our-contact .form input.Name {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .our-contact .form input.Email {
         width: 100%;
     }
-    
+
 }
 
 /* End Our Contact */
@@ -835,6 +929,10 @@ font-family: 'Source Sans 3', sans-serif; */
     font-size: 18px;
 }
 
+.footer .icons a i:hover {
+    color: #ff305b;
+}
+
 .footer p {
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
@@ -850,15 +948,16 @@ font-family: 'Source Sans 3', sans-serif; */
     font-size: 16px;
     text-transform: capitalize;
 }
+
 @media(max-width:480px) {
     .footer {
         padding: 30px 0;
     }
-    
+
     .footer p {
         font-size: 15px;
         line-height: 25px;
-        
+
     }
 }
 
