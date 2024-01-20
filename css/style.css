@@ -310,12 +310,22 @@ font-family: 'Source Sans 3', sans-serif; */
     border: none;
     background-color: #ff305b;
     color: #ffffff;
-    padding: 15px 24px;
+    /* padding: 15px 24px; */
     margin-left: 10px;
     font-weight: 400;
     border-radius: 3px;
 }
-
+.information .box button a {
+   text-decoration: none;
+   background-color: #ff305b;
+   color: #ffffff;
+   padding: 15px 24px;
+   font-weight: 400;
+   border-radius: 3px;
+}
+.information .box button:hover a{
+    background-color: red;
+}
 @media(max-width:480px) {
     .contain {
         width: 100%;

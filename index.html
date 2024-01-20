@@ -95,8 +95,8 @@
                     <div class="clear-fix"></div>
                 </div>
 
-                <button class="btn-R">Download CV <i class="fa-solid fa-download"></i></button>
-                <button>Hire Me <i class="fa-solid fa-location-arrow"></i></button>
+                <button class="btn-R"><a href="https:\\mycv.pdf" target="_blank" download>Download CV <i class="fa-solid fa-download"></i></a> </button>
+                <button><a href="#Contact">Hire Me <i class="fa-solid fa-location-arrow"></i></a></button>
             </div>
 
         </div>
@@ -386,12 +386,14 @@
             <span class="line-one"></span>
         </div>
         <div class="form">
-            <input type="text" name="name" placeholder="Name" class="Name">
-            <input type="text" name="email" placeholder="Email" class="Email">
+            <form action="">
+            <input type="text" name="name" placeholder="Name" class="Name" required>
+            <input type="text" name="email" placeholder="Email" class="Email" required>
             <div class="clear-fix"></div>
             <input type="text" name="subject" placeholder="Subject" class="Subject">
             <textarea name="message" placeholder="Message for me" cols="30" rows="10"></textarea>
-            <button>SEND MESSAGE</button>
+            <button  type="submit">SEND MESSAGE</button>
+        </form>
         </div>
     </div>
 </div>
